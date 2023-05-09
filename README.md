@@ -1,2 +1,2 @@
-# echoshop
-This is E-commerce project
+# AI to-do list
+AI integrated to do list for your productivity
