@@ -1,0 +1,215 @@
+body {
+  background-color: #f5f4f7;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 40px;
+  align-items: center;
+  padding: 20px 40px;
+  flex-direction: row;
+}
+.head .greeting {
+  display: flex;
+  flex-direction: column;
+}
+.head .greeting #goodmorninguser {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Quicksand";
+  margin-bottom: -40px;
+}
+.head .greeting #location {
+  font-size: 17px;
+  font-weight: 600;
+  font-family: "Quicksand";
+}
+.head .account {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.head .account .name {
+  margin-right: 10px;
+  line-height: 0.1;
+}
+.head .account .profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 20%;
+}
+.head .account .name {
+  display: flex;
+  flex-direction: column;
+}
+.head .account .name #username {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Quicksand";
+  margin-bottom: 8px;
+  margin-left: 10%;
+}
+.head .account .name #probadge {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Quicksand";
+  color: #ffc107;
+}
+
+.container1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 25px 25px;
+  grid-auto-flow: row;
+  height: 40vh;
+  margin: 0 70px;
+  grid-template-areas: "shortcut shortcut performance" "previous-task previous-task performance";
+}
+
+.shortcutadd {
+  grid-area: shortcut;
+  height: 100%;
+}
+
+.previous-task {
+  grid-area: previous-task;
+  height: 50%;
+}
+
+.performance {
+  grid-area: performance;
+  background-color: black;
+  height: 100%;
+  border-radius: 25px;
+}
+
+#uncompleted-task {
+  font-family: "Quicksand";
+  font-size: 20px;
+  margin: 1% 0;
+  font-weight: 700;
+}
+
+.task-management {
+  background: #ffffff;
+  border: 1px solid #fcc419;
+  box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  height: 50%;
+  padding: 30px;
+}
+
+.task-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.performance-chart {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.performance-chart .single-chart {
+  width: 60%;
+  justify-content: space-around;
+}
+.performance-chart .circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 250px;
+}
+.performance-chart .circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+.performance-chart .circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+.performance-chart .circular-chart.orange .circle {
+  stroke: #ff9f00;
+}
+.performance-chart .percentage {
+  fill: #ff9f00;
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
+}
+
+.performance-info {
+  display: flex;
+  flex-direction: column;
+  transition: all 0.8s ease-in-out;
+  align-items: center;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.performance-info #performance-info-title {
+  font-family: "Quicksand";
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: white;
+}
+.performance-info ul {
+  color: #fcc419;
+}
+
+.task-managment {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px 20px;
+  grid-auto-flow: row;
+  margin: 25px 70px;
+  grid-template-areas: "add-task add-task habbit-builder" "task-list task-list habbit-builder";
+}
+
+.add-task {
+  grid-area: add-task;
+}
+
+.task-list {
+  grid-area: task-list;
+}
+
+.habbit-builder {
+  grid-area: habbit-builder;
+}
+
+.add-task {
+  grid-area: add-task;
+  background-color: black;
+  height: 10vh;
+}
+
+.task-list {
+  grid-area: task-list;
+  background-color: rgb(194, 191, 191);
+}
+
+.habbit-builder {
+  grid-area: habbit-builder;
+  background-color: rgb(187, 183, 183);
+  height: 180%;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="srtstyle.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+    <div id="shortcut-adder">
+      <div class="plus-icon" onclick="showForm()">
+        <i class="fa fa-plus"></i>
+      </div>
+      <div id="form-container">
+        <form>
+          <label for="website-url">Web Address:</label>
+          <input type="url" id="website-url" name="website-url" required />
+          <label for="website-title">Website Title:</label>
+          <input type="text" id="website-title" name="website-title" required />
+          <label for="website-icon">Upload Icon:</label>
+          <input
+            type="file"
+            id="website-icon"
+            name="website-icon"
+            accept="image/*"
+            required
+          />
+          <button type="submit" onclick="addShortcut()">Add</button>
+          <button type="button" onclick="hideForm()">Cancel</button>
+        </form>
+      </div>
+      <div id="shortcut-container">
+        <!-- Existing shortcuts will b
+      e added here -->
+      </div>
+    </div>
+  </body>
+  <script src="style.js"></script>
+</html>

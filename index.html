@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="srtstyle.css" />
+    <title>AI To-Do list</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="head">
+        <div class="greeting">
+          <p id="goodmorninguser">Good moring, RAKIB.</p>
+          <br />
+          <p id="location">Chittagong <span id="temp">41</span> degree 🔥</p>
+        </div>
+        <div class="account">
+          <div class="profile">
+            <img src="images/rakib3.jpg" alt="profile" />
+          </div>
+          <div class="name">
+            <p id="username">RAKIB</p>
+            <br />
+            <p id="probadge">🍕 PRO</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container1">
+      <div class="shortcutadd">
+        <div id="shortcut-adder">
+          <div class="plus-icon" onclick="showForm()">
+            <i class="fa fa-plus"></i>
+          </div>
+          <div id="form-container">
+            <form>
+              <label for="website-url">Web Address:</label>
+              <input type="url" id="website-url" name="website-url" required />
+              <label for="website-title">Website Title:</label>
+              <input
+                type="text"
+                id="website-title"
+                name="website-title"
+                required
+              />
+              <label for="website-icon">Upload Icon:</label>
+              <input
+                type="file"
+                id="website-icon"
+                name="website-icon"
+                accept="image/*"
+                required
+              />
+              <button type="submit" onclick="addShortcut()">Add</button>
+              <button type="button" onclick="hideForm()">Cancel</button>
+            </form>
+          </div>
+          <div id="shortcut-container">
+            <!-- Existing shortcuts will b
+            e added here -->
+          </div>
+        </div>
+      </div>
+
+      <div class="previous-task">
+        <p id="uncompleted-task">Uncompleted Task 🔥</p>
+        <div class="task-management">
+          <div class="task-header">
+            <div class="task-heading">Task</div>
+            <div class="type-heading">Type</div>
+            <div class="category-heading">Category</div>
+            <div class="time-heading">Approx Time</div>
+            <div class="status-heading">Status</div>
+          </div>
+        </div>
+      </div>
+      <div class="performance">
+        <div class="performance-chart">
+          <div class="single-chart">
+            <svg viewBox="0 0 36 36" class="circular-chart orange">
+              <path
+                class="circle-bg"
+                d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+              <path
+                class="circle"
+                stroke-dasharray="30, 100"
+                d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+              <text x="18" y="20.35" class="percentage">+30%</text>
+            </svg>
+          </div>
+          <div class="performance-info">
+            <p id="performance-info-title">Performance</p>
+            <ul>
+              <li>Task Completed: 10</li>
+              <li>Task Uncompleted: 5</li>
+              <li>Task Failed: 2</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="task-managment">
+      <div class="add-task"></div>
+      <div class="task-list"></div>
+      <div class="habbit-builder"></div>
+    </div>
+  </body>
+  <script src="srtstyle.js"></script>
+</html>
