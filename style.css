@@ -197,12 +197,6 @@ body {
   grid-area: habbit-builder;
 }
 
-.add-task {
-  grid-area: add-task;
-  background-color: black;
-  height: 10vh;
-}
-
 .task-list {
   grid-area: task-list;
   background-color: rgb(194, 191, 191);
@@ -212,4 +206,66 @@ body {
   grid-area: habbit-builder;
   background-color: rgb(187, 183, 183);
   height: 180%;
+}
+
+.add-task {
+  grid-area: add-task;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  border-radius: 25px;
+}
+.add-task #myInput {
+  padding: 10px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.75);
+  width: 56%;
+  height: 30px;
+  font-weight: bold;
+  background: rgba(252, 196, 25, 0.17);
+  border: 2px solid rgba(0, 0, 0, 0.23);
+  border-radius: 18px;
+}
+.add-task #format-button {
+  background: #fcc419;
+  border: 3px solid rgba(0, 0, 0, 0.37);
+  border-radius: 20px;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.add-task #approx-time {
+  background: rgb(0, 0, 0);
+  border: 3px solid rgba(252, 195, 25, 0.768627451);
+  border-radius: 20px;
+  padding: 15px 20px;
+  text-align: center;
+  color: #fcc419;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.add-task #add-task-button {
+  background: rgb(0, 0, 0);
+  border: 2px solid rgba(0, 0, 0, 0.28);
+  border-radius: 20px;
+  padding: 15px 20px;
+  text-align: center;
+  color: #fcc419;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
